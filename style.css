@@ -589,7 +589,6 @@ margin: 2.5px;
   margin: auto;
   height: 175px;
   margin-top: 20px;
-  box-shadow: 2px 2px 3px gray;
   border-radius: 5px;
 }
 
@@ -605,11 +604,11 @@ margin: 2.5px;
 
 /* Caption text */
 .text {
-  color: gray;
-  font-size: 20px;
+  color: white;
+  font-size: 18px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 6px;
   width: 100%;
   text-align: center;
 }
