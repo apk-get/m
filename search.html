@@ -37,30 +37,34 @@ font-family: 'Poppins', sans-serif;
 
 body {
 background-color: var(--primary-color);
+display: flex;
+justify-content: center;
 }
 
 
 .center {
-width: 100%;
+width: 400px;
 height: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
 
 
-#myInput {
+.center #myInput {
   background-color: var(--search-color); /* Add a background color to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 65%; /* Full-width */
+  width: 235px; /* Full-width */
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
-  border: 2px solid gray; /* Add a gray border */
-  margin-bottom: 12px; /* Add some space below the input */
+border: solid var(--search-color);
+  margin-bottom: 13px; /* Add some space below the input */
 color: var(--secondary-color);
 position: fixed;
-left: 5px;
+margin-left: -175px;
 top: 5px;
 border-radius: 10px;
-box-shadow: 2px 2px 3px gray;
 }
 
 #myUL {
@@ -68,6 +72,9 @@ box-shadow: 2px 2px 3px gray;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #myUL li a {
@@ -79,16 +86,25 @@ box-shadow: 2px 2px 3px gray;
   font-size: 18px; /* Increase the font-size 
   */
   color: var(--secondary-color); /* Add a white text color */
-  display: block; /* Make it into a block element to fill the whole list */
-  padding-left: 55px;
   border-radius: 15px;
-  height: 30px;
+  height: 175px;
   margin: 5px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
 }
 
 #myUL li a:hover:not(.header) {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
   color: black;
+}
+
+#myUL li a p {
+position: relative;
+bottom: -71px;
+text-align: center;
 }
 
 /*Content Starts*/
@@ -110,13 +126,12 @@ color: var(--secondary-color);
 
 
 #myUL li a img {
-margin-top: -3px;
-height: 35px;
-width: 35px;
+margin-top: -18px;
+height: 128px;
+width: 128px;
 border-radius: 5px;
 border: solid lightgray 1px;
 position: absolute;
-left: 15px;
 }
 
 .content .container a {
@@ -164,6 +179,8 @@ padding-bottom: 20px;
 width: 100%;
 background-color: var(--tertiary-color);
 border-top: solid 1px gray;
+left: 0;
+opacity: 0.5;
 }
 
 .footer p {
@@ -179,27 +196,33 @@ color: gray;
 .back {
 position: fixed;
 top: 10px;
-right: 10px;
+margin-left: 305px;
+}
+
+.back img:hover {
+box-shadow: 2px 2px 3px gray;
 }
 
 .back img {
 height: 40px;
 width: 40px;
 border-radius: 5px;
-box-shadow: 2px 2px 3px gray;
-border: solid 1px gray;
 }
 
 @media only screen and (max-width: 5000px) {
 
-
+#myUL li a {
+margin-left: 25px;
+}
 
 
 }
 
 @media only screen and (max-width: 600px) {
 
-
+#myUL li a {
+margin-left: 15px;
+}
 
 }
 </style>
@@ -214,123 +237,123 @@ border: solid 1px gray;
 <br> <br> <br>
 
 <ul id="myUL">
-  <li><a href="apps1.html">Apps <img src="assets/apps.png"></a></li>
+  <li><a href="apps1.html"><img src="assets/apps.png"><p>Apps</p></a></li>
   
-  <li><a href="games1.html">Games<img src="assets/apps.png"></a></li>
+  <li><a href="games1.html"><p>Games</p><img src="assets/apps.png"></a></li>
 
-  <li><a href="facebooklite.html">facebook lite<img src="assets/images1.png"></a></li>
+  <li><a href="facebooklite.html"><p>facebook lite</p><img src="assets/images1.png"></a></li>
   
-  <li><a href="facebook.html">facebook<img src="assets/images4.png"></a></li>
+  <li><a href="facebook.html"><p>facebook</p><img src="assets/images4.png"></a></li>
 
-  <li><a href="messengerlite.html">messenger lite<img src="assets/images2.png"></a></li>
+  <li><a href="messengerlite.html"><p>messenger lite</p><img src="assets/images2.png"></a></li>
   
-  <li><a href="messenger.html">messenger<img src="assets/images5.png"></a></li>
+  <li><a href="messenger.html"><p>messenger</p><img src="assets/images5.png"></a></li>
   
-  <li><a href="twitter.html">twitter<img src="assets/images6.png"></a></li>
+  <li><a href="twitter.html"><p>twitter</p><img src="assets/images6.png"></a></li>
  
-  <li><a href="gmeet.html">google meet<img src="assets/images3.png"></a></li>
+  <li><a href="gmeet.html"><p>google meet</p><img src="assets/images3.png"></a></li>
   
-  <li><a href="gclassroom.html">google classroom<img src="assets/images.png"></a></li>
+  <li><a href="gclassroom.html"><p>google classroom</p><img src="assets/images.png"></a></li>
   
-  <li><a href="twitterlite.html">twitter lite<img src="assets/images7.png"></a></li>
+  <li><a href="twitterlite.html"><p>twitter lite</p><img src="assets/images7.png"></a></li>
   
-  <li><a href="zombiecatchers.html">zombie catchers<img src="assets/images8.png"></a></li>
+  <li><a href="zombiecatchers.html"><p>zombie catchers</p><img src="assets/images8.png"></a></li>
   
-  <li><a href="zombietsunami.html">zombie tsunami<img src="assets/images9.png"></a></li>
+  <li><a href="zombietsunami.html"><p>zombie tsunami</p><img src="assets/images9.png"></a></li>
   
-  <li><a href="templerun.html">temple run<img src="assets/images10.png"></a></li>
+  <li><a href="templerun.html"><p>temple run</p><img src="assets/images10.png"></a></li>
   
-  <li><a href="pvz.html">plants vs zombies free<img src="assets/images11.png"></a></li>
+  <li><a href="pvz.html"><p>plants vs zombies free</p><img src="assets/images11.png"></a></li>
   
-  <li><a href="cookingfever.html">cooking fever<img src="assets/images12.png"></a></li>
+  <li><a href="cookingfever.html"><p>cooking fever</p><img src="assets/images12.png"></a></li>
   
-  <li><a href="pookingbilliards.html">pooking billiards city<img src="assets/images13.png"></a></li>
+  <li><a href="pookingbilliards.html"><p>pooking billiards city</p><img src="assets/images13.png"></a></li>
   
-  <li><a href="pixellab.html">pixel lab<img src="assets/images14.png"></a></li>
+  <li><a href="pixellab.html"><p>pixel lab</p><img src="assets/images14.png"></a></li>
   
-  <li><a href="twistytimer.html">twisty timer<img src="assets/images15.png"></a></li>
+  <li><a href="twistytimer.html"><p>twisty timer</p><img src="assets/images15.png"></a></li>
   
-  <li><a href="#">microsoft word<img src="assets/images16.png"></a></li>
+  <li><a href="#"><p>microsoft word</p><img src="assets/images16.png"></a></li>
   
-  <li><a href="wpsoffice.html">wps office<img src="assets/images17.png"></a></li>
+  <li><a href="wpsoffice.html"><p>wps office</p><img src="assets/images17.png"></a></li>
   
-  <li><a href="shareitlite.html">shareit lite<img src="assets/images19.png"></a></li>
+  <li><a href="shareitlite.html"><p>shareit lite</p><img src="assets/images19.png"></a></li>
   
-  <li><a href="turbovpnlite.html">turbo vpn lite<img src="assets/images18.png"></a></li>
+  <li><a href="turbovpnlite.html"><p>turbo vpn lite</p><img src="assets/images18.png"></a></li>
   
-  <li><a href="sortpuz.html">Sort Puz: water color sort puz...<img src="assets/images20.png"></a></li>
+  <li><a href="sortpuz.html"><p>Sort Puz: water...</p><img src="assets/images20.png"></a></li>
   
-  <li><a href="mobilelegends.html">mobile legends bang bang<img src="assets/images21.png"></a></li>
+  <li><a href="mobilelegends.html"><p>mobile legends</p><img src="assets/images21.png"></a></li>
   
-  <li><a href="phslam.html">PBA Philippine Slam<img src="assets/images22.png"></a></li>
+  <li><a href="phslam.html"><p>PBA Philippine Slam</p><img src="assets/images22.png"></a></li>
   
-  <li><a href="dumbwaystodie.html">Dumb Ways to Die<img src="assets/images24.png"></a></li>
+  <li><a href="dumbwaystodie.html"><p>Dumb Ways to Die</p><img src="assets/images24.png"></a></li>
   
-  <li><a href="specimen.html">Specimen Zero<img src="assets/images25.png"></a></li>
+  <li><a href="specimen.html"><p>Specimen Zero</p><img src="assets/images25.png"></a></li>
   
-  <li><a href="remini.html">Remini ai photo enhancer<img src="assets/images26.png"></a></li>
+  <li><a href="remini.html"><p>Remini</p><img src="assets/images26.png"></a></li>
   
-  <li><a href="coc.html">Clash of Clans<img src="assets/images28.png"></a></li>
+  <li><a href="coc.html"><p>Clash of Clans</p><img src="assets/images28.png"></a></li>
   
-  <li><a href="pinterest.html">Pinterest<img src="assets/images27.png"></a></li>
+  <li><a href="pinterest.html"><p>Pinterest</p><img src="assets/images27.png"></a></li>
   
-  <li><a href="duckduckgo.html">DuckDuckGo Privacy Browser<img src="assets/images29.png"></a></li>
+  <li><a href="duckduckgo.html"><p>DuckDuckGo </p><img src="assets/images29.png"></a></li>
   
-  <li><a href="zarchiver.html">ZArchiver<img src="assets/images30.png"></a></li>
+  <li><a href="zarchiver.html"><p>ZArchiver</p><img src="assets/images30.png"></a></li>
   
-  <li><a href="amongus.html">Among Us<img src="assets/images31.png"></a></li>
+  <li><a href="amongus.html"><p>Among us</p><img src="assets/images31.png"></a></li>
   
-  <li><a href="netflix.html">Netflix<img src="assets/images32.png"></a></li>
+  <li><a href="netflix.html"><p>Netflix</p><img src="assets/images32.png"></a></li>
   
-  <li><a href="spotify.html">Spotify<img src="assets/images34.png"></a></li>
+  <li><a href="spotify.html"><p>Spotify</p><img src="assets/images34.png"></a></li>
   
-  <li><a href="wattpad.html">Wattpad<img src="assets/images35.png"></a></li>
+  <li><a href="wattpad.html"><p>Wattpad</p><img src="assets/images35.png"></a></li>
   
-  <li><a href="ppsspp.html">PPSSPP Free<img src="assets/images36.png"></a></li>
+  <li><a href="ppsspp.html"><p>PPSSPP Free</p><img src="assets/images36.png"></a></li>
   
-  <li><a href="slither.html">slither.io<img src="assets/images37.png"></a></li>
+  <li><a href="slither.html"><p>slither.io</p><img src="assets/images37.png"></a></li>
   
-  <li><a href="wordscapes.html">Wordscapes<img src="assets/images38.png"></a></li>
+  <li><a href="wordscapes.html"><p>Wordscapes</p><img src="assets/images38.png"></a></li>
   
-  <li><a href="gcash.html">GCash<img src="assets/images39.png"></a></li>
+  <li><a href="gcash.html"><p>GCash</p><img src="assets/images39.png"></a></li>
   
-  <li><a href="webtoon.html">WEBTOON<img src="assets/images40.png"></a></li>
+  <li><a href="webtoon.html"><p>WEBTOON</p><img src="assets/images40.png"></a></li>
   
-  <li><a href="shopee.html">Shopee<img src="assets/images41.png"></a></li>
+  <li><a href="shopee.html"><p>Shopee PH</p><img src="assets/images41.png"></a></li>
   
-  <li><a href="pubglite.html">Pubg Mobile Lite<img src="assets/images42.png"></a></li>
+  <li><a href="pubglite.html"><p>Pubg Mobile Lite</p><img src="assets/images42.png"></a></li>
   
-  <li><a href="genshin.html">Genshin Impact<img src="assets/images43.png"></a></li>
+  <li><a href="genshin.html"><p>Genshin Impact</p><img src="assets/images43.png"></a></li>
   
-  <li><a href="clashroyale.html">Clash Royale<img src="assets/images44.png"></a></li>
+  <li><a href="clashroyale.html"><p>Clash Royale</p><img src="assets/images44.png"></a></li>
   
-  <li><a href="honkai.html">Honkai Impact 3<img src="assets/images45.png"></a></li>
+  <li><a href="honkai.html"><p>Honkai Impact 3</p><img src="assets/images45.png"></a></li>
  
-  <li><a href="zombiecastaways.html">Zombie Castaways<img src="assets/images46.png"></a></li>
+  <li><a href="zombiecastaways.html"><p>Zombie Castaways</p><img src="assets/images46.png"></a></li>
   
-  <li><a href="cod.html">Call of Duty®: Mobile - Garena
+  <li><a href="cod.html"><p>Call of Duty Mobile</p>
 
 <img src="assets/images47.png"></a></li>
   
-  <li><a href="freefire.html">Garena Free Fire MAX
+  <li><a href="freefire.html"><p>Garena Free Fire MAX</p>
 
 <img src="assets/images48.png"></a></li>
   
-  <li><a href="xapkinstaller.html">XAPK Installer<img src="assets/images49.png"></a></li>
+  <li><a href="xapkinstaller.html"><p>XAPK Installer</p><img src="assets/images49.png"></a></li>
   
-  <li><a href="youtube.html">YouTube<img src="assets/images50.png"></a></li>
+  <li><a href="youtube.html"><p>Youtube</p><img src="assets/images50.png"></a></li>
   
-  <li><a href="#">Name<img src="assets/images.png"></a></li>
+  <li><a href="#"><p>Name</p><img src="assets/images.png"></a></li>
   
-  <li><a href="#">Name<img src="assets/images.png"></a></li>
+  <li><a href="#"><p>Name</p><img src="assets/images.png"></a></li>
   
-  <li><a href="#">Name<img src="assets/images.png"></a></li>
+  <li><a href="#"><p>Name</p><img src="assets/images.png"></a></li>
   
-  <li><a href="#">Name<img src="assets/images.png"></a></li>
+  <li><a href="#"><p>Name</p><img src="assets/images.png"></a></li>
   
-  <li><a href="#">Name<img src="assets/images.png"></a></li>
+  <li><a href="#"><p>Name</p><img src="assets/images.png"></a></li>
   
-  <li><a href="#">Name<img src="assets/images.png"></a></li>
+  
   
   
   
