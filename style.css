@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
 
@@ -35,14 +35,15 @@ font-family: 'Poppins', sans-serif;
 
 .loader-wrapper {
 
-width: 200%;
-height: 1400%;
-position: absolute;
+width: 100%;
+position: fixed;
+bottom: 0;
 top: 0;
-left: -50%;
+left: 0;
 background-color: var(--primary-color);
 display: flex;
 justify-content: center;
+align-items: center;
 }
 
 .loader {
@@ -50,9 +51,7 @@ justify-content: center;
 display: inline-block;
 
 width: 30px;
-top: 160px;
 height: 30px;
-position: relative;
 
 border: 4px solid red;
 
@@ -107,8 +106,8 @@ animation: loader-inner 2s infinite ease-in;
 
 body {
 background-color: var(--primary-color);
-display: flex;
-justify-content: center;
+overflow-x: hidden;
+font-family: 'Poppins', sans-serif;
 }
 
 body .head {
@@ -117,6 +116,7 @@ height: 54px;
 width: 100%;
 border-bottom: solid 1px gray;
 position: fixed;
+font-family: 'Poppins', sans-serif;
 }
 
 
@@ -347,10 +347,12 @@ transform: translateY(-50%) rotate(-180deg);
 .content{
 top: 54px;
 position: absolute;
-width: 350px;
+width: 100%;
 color: var(--secondary-color);
 text-align: center;
 background-color: var(--primary-color);
+overflow-x: hidden;
+font-family: 'Poppins', sans-serif;
 }
 
 .header{
@@ -386,30 +388,32 @@ padding-top: 30px;
 }
 
 .content .container {
-width: 340px;
+width: 100%;
+height: 210px;
 margin-top: 5px;
 background-color: var(--primary-color);
-margin: 3px;
+margin-left: 6px;
 border-radius: 2px;
 display: flex;
-flex-wrap: wrap;
+flex-wrap: auto;
+overflow-x: scroll;
 }
 
 .content .container a img {
 height: 140px;
-width: 140px;
+width: 130px;
 border-radius: 23px 23px 10px 10px;
 border-bottom: solid lightgray 1px;
 margin-left: 8px;
+margin-right: 8px;
 margin-bottom: 5px;
 background-color: var(--primary-color);
 }
 
 .content .container a {
 font-size: 16px;
-width: 155px;
+max-width: 170px;
 padding-top: 8px;
-margin-left: 10px;
 margin-top: 10px;
 height: 195px;
 text-decoration: none;
@@ -419,6 +423,7 @@ display: flex;
 flex-direction: column;
 box-shadow: 2px 2px 3px var(--shadow-color);
 border-radius: 25px;
+margin: 5px;
 }
 
 .content .container a:hover img {
@@ -448,7 +453,7 @@ color: gray;
 position: absolute;
 height: 40px;
 width: 40px;
-top: 2.5px;
+top: 8.5px;
 right: 6px;
 background-color: transparent;
 border-radius: 3px;
@@ -464,7 +469,9 @@ width: 20px;
 .more {
 margin-top: 10px;
 height: 30px;
-width: 74%;
+width: 100%;
+display: flex;
+justify-content: center;
 }
 
 .content .more a {
@@ -478,6 +485,8 @@ padding-right: 10px;
 width: 95px;
 box-shadow: 1px 1px 2px gray;
 border-radius: 10px;
+padding-top: 3.3px;
+padding-bottom: 3.3px;
 }
 
 .more img {
@@ -489,7 +498,7 @@ height: 20px;
 
 .btn-toggle {
 position: absolute;
-top: 4.5px;
+top: 11px;
 right: 50px;
 font-size: 28px;
 }
@@ -553,6 +562,7 @@ background-color: var(--tertiary-color);
 	margin-bottom: 15px;
 	box-shadow: 1px 1px 2px gray;
 	border-radius: 40px;
+	margin-right: 5px;
 }
 
 .content .download1 a {
@@ -661,7 +671,7 @@ font-size: 20px;
 }
 
 #a4 img {
-margin-left: 0;
+margin-left: 10px;
 }
 
 
@@ -685,21 +695,13 @@ top: 0;
 
 .content{
 position: absolute;
-width: 550px;
+width: 100%;
 color: var(--secondary-color);
 text-align: center;
 background-color: var(--primary-color);
 }
 
-.content .container {
-width: 540px;
-margin-top: 5px;
-background-color: var(--primary-color);
-margin: 3px;
-border-radius: 2px;
-display: flex;
-flex-wrap: wrap;
-}
+
 
 #a3 {
 display: block;
@@ -710,10 +712,6 @@ flex-direction: column;
 #a4 {
 display: none;
 flex-direction: column;
-}
-
-.content .container a {
-margin-left: 20px;
 }
 
 }
@@ -734,35 +732,24 @@ top: 0;
 
 .content{
 position: absolute;
-width: 350px;
+width: 100%;
+height: 100%;
 color: var(--secondary-color);
 text-align: center;
 background-color: var(--primary-color);
 }
 
-.content .container {
-width: 340px;
-margin-top: 5px;
-background-color: var(--primary-color);
-margin: 3px;
-border-radius: 2px;
-display: flex;
-flex-wrap: wrap;
-}
 
 #a3 {
-display: none;
+display: block;
 flex-direction: column;
 }
 
 #a4 {
 display: block;
 flex-direction: column;
+width: 170px;
 }
 
-
-.content .container a {
-margin-left: 10px;
-}
 
 }
