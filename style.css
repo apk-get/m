@@ -18,6 +18,10 @@ font-family: 'Poppins', sans-serif;
 
 ::-webkit-scrollbar { width: 0; /* Remove scrollbar space */ background: transparent; /* Optional: just make scrollbar invisible */ }
 
+html {
+				scroll-behavior: smooth;
+}
+
 :root {
 
 --primary-color: #E5E4E2;
@@ -352,7 +356,7 @@ color: var(--secondary-color);
 text-align: center;
 background-color: var(--primary-color);
 font-family: 'Poppins', sans-serif;
-animation: loadingin 2.5s;
+animation: loadingin 0.75s;
 }
 
 
@@ -422,6 +426,7 @@ margin-left: 8px;
 margin-right: 8px;
 margin-bottom: 5px;
 background-color: var(--primary-color);
+animation: loadingin 1s;
 }
 
 .content .container a {
@@ -440,11 +445,10 @@ border-radius: 25px;
 margin: 5px;
 }
 
-.content .container a:hover img {
-background: gray;
+.content .container a:hover  {
 box-shadow: 3px 3px 4px gray;
 cursor: pointer;
-filter: opacity(0.6);
+animation: loadingin 1.5s infinite;
 }
 
 .footer {
@@ -548,7 +552,7 @@ text-align: center;
 font-size: 15px;
 color: var(--secondary-color);
 border-radius: 15px;
-animation: loadingin 2.5s;
+animation: loadingin 0.75s;
 }
 
 .content .box1 img {
@@ -557,6 +561,7 @@ width: 94.7px;
 box-shadow: 2px 2px 3px var(--shadow-color);
 border-radius: 15px;
 margin-top: 20px;
+animation: loadingin 1s;
 }
 
 .content .download a {
@@ -599,6 +604,7 @@ height: 50px;
 
 .content .download1:hover {
 box-shadow: 3px 3px 4px gray;				
+animation: loadingin 1.5s infinite;
 }
 
 #desc {
@@ -615,6 +621,7 @@ margin: 2.5px;
   height: 175px;
   margin-top: 20px;
   border-radius: 5px;
+  animation: loadingin 2.5s;
 }
 
 /* Hide the images by default */
