@@ -55,7 +55,7 @@ justify-content: center;
   background-color: var(--search-color); /* Add a background color to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 235px; /* Full-width */
+  width: 285px; /* Full-width */
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
 border: solid var(--search-color);
@@ -66,6 +66,8 @@ margin-left: -175px;
 top: 5px;
 border-radius: 10px;
 animation: loadingin 1.5s;
+opacity: 0.8;
+box-shadow: 4px 4px 4px rgba(0,0,0,0.3)
 }
 
 #myUL {
@@ -113,7 +115,7 @@ animation: loadingin 1.5s;
 #myUL li a:hover:not(.header) {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
   color: black;
-  animation: loadingin 1.5s infinite;
+  animation: loadingin 1.5s;
 }
 
 #myUL li a p {
@@ -211,7 +213,8 @@ color: gray;
 .back {
 position: fixed;
 top: 10px;
-margin-left: 305px;
+margin-left: 303px;
+opacity: 0.8;
 }
 
 .back img:hover {
