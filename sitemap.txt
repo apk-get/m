@@ -1,4 +1,3 @@
-https://www.apkget.xyz/index.html
 https://www.apkget.xyz/pinterest.html
 https://www.apkget.xyz/gcash.html
 https://www.apkget.xyz/facebook.html
@@ -71,5 +70,9 @@ https://www.apkget.xyz/legendoface.html
 https://www.apkget.xyz/foodpanda.html
 https://www.apkget.xyz/mangatoon.html
 https://www.apkget.xyz/mangatoonlite.html
+https://www.apkget.xyz/unionbankonline.html
+https://www.apkget.xyz/heroesevolved.html
+https://www.apkget.xyz/lazada.html
+https://www.apkget.xyz/paypal.html
 
 

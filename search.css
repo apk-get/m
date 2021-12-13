@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+}
+
+:root {
+
+--primary-color: #E5E4E2;
+--secondary-color: black;
+--tertiary-color: white;
+--search-color: white;
+
+}
+
+.dark-theme {
+--primary-color: black;
+--secondary-color: white;
+--tertiary-color: #36454F;
+--search-color: black;
+}
+
+body {
+background-color: var(--primary-color);
+display: flex;
+justify-content: center;
+}
+
+
+.center {
+width: 400px;
+height: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+
+.center #myInput {
+  background-color: var(--search-color); /* Add a background color to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 285px; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+border: solid var(--search-color);
+  margin-bottom: 13px; /* Add some space below the input */
+color: var(--secondary-color);
+position: fixed;
+margin-left: -175px;
+top: 5px;
+border-radius: 10px;
+animation: loadingin 1.5s;
+opacity: 0.8;
+box-shadow: 4px 4px 4px rgba(0,0,0,0.3)
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#myUL li a {
+  border: 1px solid white; /* Add a border to all links */
+  margin-top: 1px; /* Prevent double borders */
+  background-color: var(--tertiary-color); /*background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size 
+  */
+  color: var(--secondary-color); /* Add a white text color */
+  border-radius: 15px;
+  height: 175px;
+  margin: 5px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+  animation: loadingin 1.5s;
+}
+
+@keyframes loadingin {
+				from{
+							opacity: 0;	
+							transform: rotateX(-30deg);
+				}
+				
+				to {
+							opacity: 1;	
+							transform: rotateX(0);
+				}
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+  color: black;
+  animation: loadingin 1.5s;
+}
+
+#myUL li a p {
+position: relative;
+bottom: -71px;
+text-align: center;
+}
+
+/*Content Starts*/
+
+.content {
+position: fixed;
+height: 40px;
+width: 350px;
+bottom: 0;
+background-color: transparent;
+}
+
+.content .a1 {
+font-weight: bold;
+font-size: 16px;
+text-align: center;
+color: var(--secondary-color);
+}
+
+
+#myUL li a img {
+margin-top: -18px;
+height: 128px;
+width: 128px;
+border-radius: 5px;
+border: solid lightgray 1px;
+position: absolute;
+}
+
+.content .container a {
+display: flex;
+position: absolute;
+font-size: 16px;
+left: 0px;
+width: 254px;
+padding-top: 8px;
+margin-left: 10px;
+height: 70px;
+text-decoration: none;
+border-radius: 5px;
+color: var(--secondary-color);
+padding-left: 77px;
+}
+
+.btn-toggle {
+background-color: white;
+width: 35px;
+height: 35px;
+border-radius: 5px;
+display: none;
+}
+
+.btn-toggle img {
+margin-top: 3px;
+height: 26px;
+width: 26px;
+display: none;
+}
+
+.content .container a:hover {
+background-color: black;
+color: white;
+cursor: pointer;
+}
+/*Content ends*/
+
+.footer {
+position: fixed;
+margin-top: 0;
+padding-top: 5px;
+padding-bottom: 20px;
+width: 100%;
+background-color: var(--tertiary-color);
+border-top: solid 1px gray;
+left: 0;
+opacity: 0.5;
+}
+
+.footer p {
+text-align: center;
+font-size: 15px;
+color: green;
+}
+
+.footer a {
+color: gray;
+}
+
+.back {
+position: fixed;
+top: 10px;
+margin-left: 303px;
+opacity: 0.8;
+}
+
+.back img:hover {
+box-shadow: 2px 2px 3px gray;
+animation: loadingin 1.5s infinite;
+}
+
+.back img {
+height: 40px;
+width: 40px;
+border-radius: 5px;
+}
+
+@media only screen and (max-width: 5000px) {
+
+#myUL li a {
+margin-left: 25px;
+}
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+#myUL li a {
+margin-left: 15px;
+}
+
+}
