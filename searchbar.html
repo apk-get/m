@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width,initial-scale=1">
+				<title>Search</title>
+				<link rel="stylesheet" href="style.css"></link>
+				<style>
+				* {
+				margin: 0px;
+				padding: 0px;
+				}
+				
+				#search {
+				position: fixed;
+				top: 20px;
+				border-radius: 30px;
+				border: none;
+				box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+				height: 45px;
+				width: 94%;
+				padding-left: 50px;
+				padding-right: 10px;
+				margin-left: 10px;
+				background-color: var(--tertiary-color);
+				}
+				
+				.search {
+position: fixed;
+height: 40px;
+width: 40px;
+top: 24.5px;
+left: 15px;
+background-color: transparent;
+border-radius: 3px;
+padding: 5px;
+font-size: 25px;
+}
+				
+.content {
+margin-top: 10%;
+}
+
+.content .container {
+width: 100%;
+height: 220px;
+margin-top: 0px;
+background-color: var(--tertiary-color);
+border-radius: 2px;
+display: flex;
+flex-wrap: auto;
+overflow-x: scroll;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.content .container a img {
+height: 140px;
+width: 130px;
+border-bottom: solid lightgray 1px;
+margin-left: 8px;
+margin-right: 8px;
+margin-bottom: 5px;
+background-color: var(--tertiary-color);
+animation: loadingin 1s;
+border-radius: 10px;
+}
+
+.content .container a {
+font-size: 16px;
+max-width: 170px;
+padding-top: 8px;
+margin-top: 10px;
+height: 195px;
+text-decoration: none;
+background-color: var(--tertiary-color);
+color: var(--secondary-color);
+display: flex;
+flex-direction: column;
+margin: 5px;
+}
+
+.content .container a:hover {
+box-shadow: 3px 3px 4px gray;
+cursor: pointer;
+animation: loadingin 1.5s;
+}
+				
+				</style>
+</head>
+<body>
+				
+<br><br><br><br><br><br><br>
+<div class="content">
+<div class="a1" id="games">  
+   <h3>Games</h3>
+  </div>
+    <div class="container" data-aos="fade-up">
+    			<a href="pubglite.html"><img src="assets/images42.png">PUBG MOBILE LITE</a>
+
+    			<a href="freefire.html"><img src="assets/images48.png">Free Fire MAX</a>
+ 
+    			<a href="cod.html"><img src="assets/images47.png">Call of Duty®: M...</a>
+ 
+    			<a href="lolwildrift.html"><img src="assets/images51.png">League of L...</a>
+    			
+    			
+    			<a href="mobilelegends.html"><img src="assets/images21.png">Mobile Legends</a>
+    			
+    			<a href="heroesevolved.html"><img src="https://i.ibb.co/yq1wDBc/icon.webp ">Heroes Evolved</a>
+    			
+    			<a id="a3"href="phslam.html"><img src="assets/images22.png">PBA Philippine Slam</a>
+    			
+    			<a href="genshin.html"><img src="assets/images43.png">Genshin Impact
+
+</a>
+
+       <a href="zombiecatchers.html"><img src="assets/images8.png">Zombie Catchers</a>
+    			
+    </div>
+    <br> <hr>
+     <div class="a1" id="apps">  
+   <h3>APPS</h3>
+  </div>
+    <div class="container">
+    				
+    			<a href="paymaya.html"><img src="https://i.ibb.co/yXt0CG9/icon.webp">Paymaya</a>
+    			
+    			<a href="paypal.html"><img src=" https://i.ibb.co/9HkS7pH/icon.webp">Paypal</a>
+    			
+    			<a href="lazada.html"><img src=" https://i.ibb.co/mGTymQf/icon.webp">Lazada</a>
+    				
+    			<a href="pinterest.html"><img src="assets/images27.png">Pinterest</a>
+    			
+    			<a href="unionbankonline.html"><img src="https://i.ibb.co/hy4knnV/icon.webp">Unionbank Online</a>
+
+    			<a href="gcash.html"><img src="assets/images39.png">GCash</a>
+    			
+    			<a href="foodpanda.html"><img src="https://i.ibb.co/b1GYFx3/icon.webp ">foodpanda</a>
+    			
+    			<a href="mangatoon.html"><img src="https://i.ibb.co/n1cnwBr/icon.webp ">MangaToon</a>
+ 
+    			<a href="facebook.html"><img src="assets/images4.png">Facebook</a>
+ 
+    			<a href="messenger.html"><img src="assets/images5.png">Messenger</a>
+    			
+    			<a href="gclassroom.html"><img src="assets/images.png">Google Classroom</a>
+    			
+    			<a href="gmeet.html"><img src="assets/images3.png">Google Meet</a>
+    		
+    		 <a href="webtoon.html"><img src="assets/images40.png">WEBTOON</a>
+    			
+    			<a href="shareitlite.html"><img src="assets/images19.png">Shareit Lite</a>
+    			
+    			<a id="a3" href="twitter.html"><img src="assets/images6.png">Twitter</a>
+    			
+    </div>
+    <br>
+</div>
+
+<input type="search" value="" id="search" placeholder="Enter apk name here!" onchange="openPage()"> 
+				
+				<div class="search">
+  <a> 
+  				<span class="bi bi-search" style="color: var(--secondary-color);"></span></a>
+  				
+ </div>	
+	<script src="search.js"></script>
+				<script>
+				 const btn = document.querySelector(".btn-toggle"); const currentTheme = localStorage.getItem("theme"); if (currentTheme == "dark") { document.body.classList.add("dark-theme"); } btn.addEventListener("click", function () { document.body.classList.toggle("dark-theme"); let theme = "light"; if (document.body.classList.contains("dark-theme")) { theme = "dark"; } localStorage.setItem("theme", theme); }); 
+				</script>
+</body>
+</html>
