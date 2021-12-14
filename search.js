@@ -21,16 +21,16 @@ function openPage() { var x = document.getElementById("search").value;
 	{ window.open("gclassroom.html"); } 
 	
 	if (x === "twitter lite") 
-	{ window.open("resulttwitterlite.html"); } 
+	{ window.open("twitterlite.html"); } 
 	
 	if (x === "zombie catchers") 
-	{ window.open("resultzombiecatchers.html"); } 
+	{ window.open("zombiecatchers.html"); } 
 	
 	if (x === "zombie tsunami") 
-	{ window.open("resultzombietsunami.html"); } 
+	{ window.open("zombietsunami.html"); } 
 	
 	if (x === "templerun") 
-	{ window.open("resulttemplerun.html"); } 
+	{ window.open("templerun.html"); } 
 	
 	if (x === "plants vs zombies") 
 	{ window.open("pvz.html"); } 
