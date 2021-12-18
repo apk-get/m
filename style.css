@@ -23,7 +23,7 @@ html {
 
 :root {
 
---primary-color: #E5E4E2;
+--primary-color: #F9F6EE;
 --secondary-color: black;
 --tertiary-color: white;
 --header-color: white;
@@ -33,7 +33,7 @@ html {
 .dark-theme {
 --primary-color: black;
 --secondary-color: white;
---tertiary-color: #353935;
+--tertiary-color: #36454F;
 --header-color: black;
 --shadow-color: black;
 }
@@ -349,7 +349,7 @@ font-weight: 500;
 
 .content .a1 {
 font-weight: bold;
-font-size: 18px;
+font-size: 15.5px;
 margin-top: 30px;
 padding-top: 15px;
 padding-bottom: 10px;
@@ -397,9 +397,9 @@ margin: 5px;
 }
 
 .content .container a:hover {
-box-shadow: 3px 3px 4px gray;
+transform: scale(0.92);
 cursor: pointer;
-animation: loadingin 1.5s;
+transition: .5s;
 }
 
 .footer {
