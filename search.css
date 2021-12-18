@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 
 * {
 margin: 0;
 padding: 0;
-font-family: 'Poppins', sans-serif;
+font-family: 'Oxygen', sans-serif;
 }
 
 :root {
@@ -39,19 +39,19 @@ justify-content: center;
 
 
 .center #myInput {
-  background-color: var(--search-color); /* Add a background color to input */
+  background-color: var(--tertiary-color); /* Add a background color to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
   width: 285px; /* Full-width */
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
-border: solid var(--search-color);
+border: none;
   margin-bottom: 13px; /* Add some space below the input */
 color: var(--secondary-color);
 position: fixed;
 margin-left: -175px;
 top: 5px;
-border-radius: 10px;
+border-radius: 30px;
 animation: loadingin 1.5s;
 opacity: 0.8;
 box-shadow: 4px 4px 4px rgba(0,0,0,0.3)
@@ -68,7 +68,7 @@ box-shadow: 4px 4px 4px rgba(0,0,0,0.3)
 }
 
 #myUL li a {
-  border: 1px solid white; /* Add a border to all links */
+  border: none; /* Add a border to all links */
   margin-top: 1px; /* Prevent double borders */
   background-color: var(--tertiary-color); /*background color */
   padding: 12px; /* Add some padding */
@@ -99,7 +99,7 @@ box-shadow: 4px 4px 4px rgba(0,0,0,0.3)
 				}
 }
 
-#myUL li a:hover:not(.header) {
+#myUL li a:hover {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
   color: black;
   animation: loadingin 1.5s;
@@ -109,6 +109,7 @@ box-shadow: 4px 4px 4px rgba(0,0,0,0.3)
 position: relative;
 bottom: -71px;
 text-align: center;
+font-size: 16px;
 }
 
 /*Content Starts*/
@@ -130,11 +131,11 @@ color: var(--secondary-color);
 
 
 #myUL li a img {
-margin-top: -18px;
+margin-top: -25px;
 height: 128px;
 width: 128px;
 border-radius: 5px;
-border: solid lightgray 1px;
+border: none;
 position: absolute;
 }
 
@@ -212,7 +213,7 @@ animation: loadingin 1.5s infinite;
 .back img {
 height: 40px;
 width: 40px;
-border-radius: 5px;
+border-radius: 30px;
 }
 
 @media only screen and (max-width: 5000px) {
